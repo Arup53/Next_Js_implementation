@@ -1,7 +1,6 @@
-import { BlogPropType } from "@/app/page";
 import Link from "next/link";
 
-export default function Blog({ blog }: BlogPropType) {
+export default function Blog({ blog }: any) {
   return (
     <div className="w-[20rem] h-[15rem] mx-auto bg-white shadow-lg rounded-lg overflow-hidden border flex flex-col">
       <div className="p-4 flex-grow">
