@@ -11,16 +11,13 @@ const NavBar = async () => {
       <div className="text-xl font-bold">
         <Link href="/">Home</Link>
       </div>
-      <div>
-        {/* <Link href="/signin" className="mr-4 hover:text-blue-400">
-          Sign In
-        </Link> */}
+      <div className="flex justify-center items-center gap-2">
+        <Link href={"/profile"}>Profile</Link>
 
         {!user ? (
           <LoginLink>Sign in</LoginLink>
         ) : (
-          <div className="flex justify-center gap-2">
-            <Link href={"/profile"}>Profile</Link>
+          <div>
             <LogoutLink>Log out</LogoutLink>
           </div>
         )}
